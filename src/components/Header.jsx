@@ -156,7 +156,7 @@ const NavBar = () => {
           </MenubarMenu>
           <MenubarMenu asChild>
             <Link
-              href={"/affiliate"}
+              href={"/about-us"}
               className="px-3 py-1.5 border-0 hover:bg-gray-600 hover:text-white rounded text-sm font-medium outline-nonefocus:text-accent-foreground data-[state=open]:text-accent-foreground transition-all"
             >
               GIỚI THIỆU
@@ -400,7 +400,12 @@ const MobileNavbar = () => {
           >
             ĐĂNG KÝ ĐẠI LÝ
           </Link>
-          <h1 className="font-semibold uppercase mb-4">Giới thiệu</h1>
+          <Link
+            className="font-semibold uppercase mb-4 block"
+            href={"/about-us"}
+          >
+            Giới thiệu
+          </Link>
           <h1 className="font-semibold uppercase mb-4">Liên hệ</h1>
         </div>
       </div>

@@ -5,6 +5,7 @@ import { Footer } from "@/components/Footer";
 import Providers from "./providers";
 import { Toaster } from "@/components/ui/toaster";
 import { ContactButtons } from "@/components/ContactButtons";
+import { ProgressProvider } from "@/components/ProgressProvider";
 
 const hankenGrotesk = Hanken_Grotesk({
   weight: ["100", "300", "400", "500", "700", "900"],
@@ -20,13 +21,15 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${hankenGrotesk.className} antialiased relative`}>
-        <Providers>
-          <Header />
-          {children}
-          <Footer />
-        </Providers>
-        <Toaster />
-        <ContactButtons />
+        <ProgressProvider>
+          <Providers>
+            <Header />
+            {children}
+            <Footer />
+          </Providers>
+          <Toaster />
+          <ContactButtons />
+        </ProgressProvider>
       </body>
     </html>
   );

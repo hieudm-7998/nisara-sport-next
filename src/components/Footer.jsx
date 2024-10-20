@@ -1,6 +1,8 @@
+import Link from "next/link";
+
 export const Footer = () => {
   return (
-    <div className="bg-black text-white py-10">
+    <div className="bg-black text-white py-20">
       <div className="container">
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
           <div className="flex flex-col justify-center items-center">
@@ -38,10 +40,18 @@ export const Footer = () => {
           <div>
             <h1 className="font-semibold text-lg mb-5">Liên kết</h1>
 
-            <p className="mb-2">Đăng ký đại lý</p>
-            <p className="mb-2">Giới thiệu</p>
-            <p className="mb-2">Liên hệ</p>
-            <p className="mb-2">Giỏ hàng</p>
+            <Link className="mb-2 block" href={`/affiliate`}>
+              Đăng ký đại lý
+            </Link>
+            <Link className="mb-2 block" href={`/about-us`}>
+              Giới thiệu
+            </Link>
+            <Link className="mb-2 block" href={`/contact`}>
+              Liên hệ
+            </Link>
+            <Link className="mb-2 block" href={`/cart`}>
+              Giỏ hàng
+            </Link>
           </div>
           <div>
             <iframe

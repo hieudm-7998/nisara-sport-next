@@ -41,21 +41,49 @@ const CarouselSlide = () => {
           <CarouselItem>
             <img
               className="block mx-auto"
-              src={`/images/Banner/N01.png`}
+              src={`/assets/carousel-1.jpg`}
               alt=""
             />
           </CarouselItem>
           <CarouselItem>
             <img
               className="block mx-auto"
-              src={`/images/Banner/N02.png`}
+              src={`/assets/carousel-2.jpg`}
               alt=""
             />
           </CarouselItem>
           <CarouselItem>
             <img
               className="block mx-auto"
-              src={`/images/Banner/Tongquan.png`}
+              src={`/assets/carousel-3.jpg`}
+              alt=""
+            />
+          </CarouselItem>
+          <CarouselItem>
+            <img
+              className="block mx-auto"
+              src={`/assets/carousel-4.jpg`}
+              alt=""
+            />
+          </CarouselItem>
+          <CarouselItem>
+            <img
+              className="block mx-auto"
+              src={`/assets/carousel-5.jpg`}
+              alt=""
+            />
+          </CarouselItem>
+          <CarouselItem>
+            <img
+              className="block mx-auto"
+              src={`/assets/carousel-6.jpg`}
+              alt=""
+            />
+          </CarouselItem>
+          <CarouselItem>
+            <img
+              className="block mx-auto"
+              src={`/assets/carousel-7.jpg`}
               alt=""
             />
           </CarouselItem>
